@@ -1,0 +1,123 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  border-radius: 50%;
+  border: 10px solid #ffff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+.hours div {
+  position: absolute;
+  font-size: 27px;
+  font-weight: 700;
+  color: lightgoldenrodyellow;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.hour-1 {
+  top: 36px;
+  left: 361px;
+  transform: translate(-50%);
+}
+.hour-2 {
+  right: 45px;
+  top: 125px;
+  transform: translate(-50%);
+}
+.hour-3 {
+  right: 5px;
+  transform: translate(-50%);
+  bottom: 233px;
+}
+.hour-4 {
+  transform: translate(-50%);
+  right: 44px;
+  bottom: 114px;
+}
+.hour-5 {
+  left: 358px;
+  bottom: 39px;
+  transform: translate(-50%);
+}
+.hour-6 {
+  bottom: 6px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.hour-7 {
+  left: 135px;
+  bottom: 33px;
+  transform: translate(-50%);
+}
+.hour-8 {
+  left: 53px;
+  bottom: 114px;
+  transform: translate(-50%);
+}
+.hour-9 {
+  left: 16px;
+  bottom: 225px;
+  transform: translate(-50%);
+}
+
+.hour-10 {
+  left: 52px;
+  top: 132px;
+  transform: translate(-50%);
+}
+.hour-11 {
+  left: 129px;
+  top: 44px;
+  transform: translate(-50%);
+}
+.hour-12 {
+  top: 6px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.arrows {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.arrows::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: rgb(250 250 210);
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  z-index: 4;
+}
+.arrows div {
+  background-color: #ffff;
+  width: 7px;
+  position: absolute;
+  height: 120px;
+  transform-origin: bottom center;
+  bottom: 50%;
+  z-index: 3;
+  border-radius: 50% 50% 0 0;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.arrows .hour {
+  background-color: #ffff;
+  height: 80px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.arrows .minute {
+  height: 100px;
+  background-color: #ffff;
+}
